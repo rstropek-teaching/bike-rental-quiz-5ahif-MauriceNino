@@ -1,0 +1,11 @@
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\bin\Debug\netcoreapp2.0\BikeRentalService.deps.json
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\bin\Debug\netcoreapp2.0\BikeRentalService.runtimeconfig.json
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\bin\Debug\netcoreapp2.0\BikeRentalService.runtimeconfig.dev.json
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\bin\Debug\netcoreapp2.0\BikeRentalService.dll
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\bin\Debug\netcoreapp2.0\BikeRentalService.pdb
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.csproj.CoreCompileInputs.cache
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.AssemblyInfoInputs.cache
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.AssemblyInfo.cs
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.dll
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.pdb
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.csprojResolveAssemblyReference.cache
