@@ -18,7 +18,7 @@ namespace BikeRentalService.Controllers
             => StatusCode(200, dbContext.Bikes.Select(e => e).ToList());
 
         [HttpGet]
-        [Route("Available?{sort=null}")]
+        [Route("Available")]
         public IActionResult GetAllRentals(string sort)
             => StatusCode(200, dbContext.Bikes.Select(e => e)
                 .Where(b =>
@@ -32,7 +32,7 @@ namespace BikeRentalService.Controllers
                         sort=="poah"?
                             b.RentalPriceExtraHour:
                             sort=="pd"?
-                                b.BikeId:b.BikeId
+                                b.BikeId:b.BikeId //TODO: Price Sort
                 ));
 
 

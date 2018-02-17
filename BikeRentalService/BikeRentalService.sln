@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeRentalService", "BikeRentalService\BikeRentalService.csproj", "{C79D2D87-B605-412A-BF2A-0A2E38EB1BAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeRentalService", "BikeRentalService\BikeRentalService.csproj", "{C79D2D87-B605-412A-BF2A-0A2E38EB1BAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeRentalManager", "BikeRentalManager\BikeRentalManager.csproj", "{4B67F703-4BBA-44D0-957E-4C8BF9883B97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeRentalManager", "BikeRentalManager\BikeRentalManager.csproj", "{4B67F703-4BBA-44D0-957E-4C8BF9883B97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{63F213D7-ED8E-4743-B72E-98474FA5E82A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeRentalTests", "UnitTestProject1\BikeRentalTests.csproj", "{63F213D7-ED8E-4743-B72E-98474FA5E82A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

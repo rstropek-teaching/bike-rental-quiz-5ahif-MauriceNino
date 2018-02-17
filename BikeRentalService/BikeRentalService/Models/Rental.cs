@@ -20,7 +20,7 @@ namespace BikeRentalService.Models
         [Required]
         public DateTime RentStartTime { get; set; }
 
-        public DateTime RentEndTime { get; set; }
+        public DateTime? RentEndTime { get; set; }
 
         [Range(1d, 99999999d)]
         public double TotalCost { get; set; }
