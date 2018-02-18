@@ -29,7 +29,10 @@ namespace BikeRentalService.Controllers
         [Route("Update/{custId}")]
         public IActionResult Update(int custId, [FromBody]Customer cust)
         {
+            // Getting the customer from the id
             Customer updateElement = dbContext.Customers.Select(e => e).Where(e => e.CustomerId == custId).FirstOrDefault();
+
+            // Checking which parameters are given in the Customer object from the body and porting them in the element
             updateElement.Birthday = cust.Birthday==null?updateElement.Birthday:cust.Birthday;
             updateElement.FirstName = cust.FirstName == null ? updateElement.FirstName : cust.FirstName;
             updateElement.LastName = cust.LastName == null ? updateElement.LastName : cust.LastName;
