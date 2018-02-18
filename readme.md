@@ -78,7 +78,7 @@ The system has to store **rentals** of bikes by customers. The *Rentals* entity 
 
 The system has to **calculate the total costs** automatically as soon as the end time of the rental is known. The costs are calculated based on rental time and the rental price for the rented bike. Details regarding cost calculation follow later in this document. DONE
 
-A rental that has been started (i.e. rental begin is set) but has not been ended (i.e. rental end and total costs are not set) is called an *active rental*. Rental that have been ended are called *ended rentals*. At any given point in time, each customer must only have **a single active rental**. TODO
+A rental that has been started (i.e. rental begin is set) but has not been ended (i.e. rental end and total costs are not set) is called an *active rental*. Rental that have been ended are called *ended rentals*. At any given point in time, each customer must only have **a single active rental**. DONE
 
 ### Cost Calculation DONE
 
@@ -151,9 +151,9 @@ Note that the business rules stated above have to be checked in the RESTful Web 
 
 ## Non-Functional Requirements
 
-1. There has to be a *Swagger* and/or *Open API* document describing the RESTful Web API*
-1. The code has to be well documented and formatted
-1. The RESTful Web API has to follow established best practices for designing RESTful Web APIs
+1. There has to be a *Swagger* and/or *Open API* document describing the RESTful Web API* TODO
+1. The code has to be well documented and formatted TODO
+1. The RESTful Web API has to follow established best practices for designing RESTful Web APIs TODO
 1. Tests should be automated. There have to be unit tests for at least the price finding logic. DONE
 
 *) You do not need to create the document by hand. You can use the *Swashbuckle for ASP.NET Core* NuGet package instead.
