@@ -9,3 +9,5 @@ C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalServi
 C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.dll
 C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.pdb
 C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\obj\Debug\netcoreapp2.0\BikeRentalService.csprojResolveAssemblyReference.cache
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\bin\Debug\netcoreapp2.0\BikeRentalManager.dll
+C:\GitRepos\bike-rental-quiz-5ahif-MauriceNino\BikeRentalService\BikeRentalService\bin\Debug\netcoreapp2.0\BikeRentalManager.pdb

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BikeRentalService.Models;
+using BikeRentalManager.Controllers;
+using Microsoft.EntityFrameworkCore;
 
 namespace BikeRentalService.Controllers
 {
@@ -21,7 +23,7 @@ namespace BikeRentalService.Controllers
                 return StatusCode(400, "Something is missing (Buyer or Bike?)");
             
             // Check if the Customer already has an open rental
-            if(dbContext.Rentals.Where(r=>r.Buyer.CustomerId==rent.Buyer.CustomerId&&r.RentEndTime==null).Any())
+            if(dbContext.Rentals.Where(r=>r.Buyer.CustomerId==rent.Buyer.CustomerId&&r.RentEndTime==null).ToArray().Length!=0)
                 return StatusCode(400, "This Customer already has an active rental");
 
             // Set the Buyer and Bike as a Reference and reset other parameters
@@ -51,7 +53,7 @@ namespace BikeRentalService.Controllers
         public IActionResult End(int rentalId)
         {
             // Get Rental from RentalId
-            Rental rent = dbContext.Rentals.Where(r => r.RentalId == rentalId && r.RentedBike != null).FirstOrDefault();
+            Rental rent = dbContext.Rentals.Include("RentedBike").Where(r => r.RentalId == rentalId && r.RentedBike != null).FirstOrDefault();
 
             if (rent == null)
                 return StatusCode(400, "Rental does not exist");
@@ -61,25 +63,13 @@ namespace BikeRentalService.Controllers
 
             // Set the missing parameters to end the rental
             rent.RentEndTime = DateTime.Now;
-            rent.TotalCost = CalculateTotalCost(rent);
+            rent.TotalCost = RentalFunctions.CalculateTotalCost(rent);
             rentedBike.DateOfLastService = (DateTime)rent.RentEndTime;
 
             
             dbContext.SaveChanges();
 
             return StatusCode(200, rent);
-        }
-
-        // Function to calculate the cost for a rental
-        public double CalculateTotalCost(Rental rent)
-        {
-            TimeSpan timeDiff = ((DateTime)rent.RentEndTime - (DateTime)rent.RentStartTime);
-            var totalMinutes = timeDiff.TotalMinutes;
-            var startedHours = (int)Math.Ceiling(((double)totalMinutes) / 60);
-
-            return totalMinutes <= 15 ?
-                0 :
-                rent.RentedBike.RentalPriceFirstHour + (rent.RentedBike.RentalPriceExtraHour * (startedHours - 1));
         }
 
 

@@ -3,19 +3,17 @@ using BikeRentalService.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using System;
+using BikeRentalManager.Controllers;
 
 namespace UnitTestProject1
 {
     [TestClass]
     public class BikeRentalTests
     {
-        private BikeRentalContext dbContext = new BikeRentalContext();
-        private RentalsController rc = new RentalsController();
-
         [TestMethod]
         public void TestCalculation1()
         {
-            var total=rc.CalculateTotalCost(new Rental()
+            var total=RentalFunctions.CalculateTotalCost(new Rental()
             {
                 RentedBike = new Bike
                 {
@@ -32,7 +30,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestCalculation2()
         {
-            var total = rc.CalculateTotalCost(new Rental()
+            var total = RentalFunctions.CalculateTotalCost(new Rental()
             {
                 RentedBike = new Bike
                 {
@@ -49,7 +47,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestCalculation3()
         {
-            var total = rc.CalculateTotalCost(new Rental()
+            var total = RentalFunctions.CalculateTotalCost(new Rental()
             {
                 RentedBike = new Bike
                 {

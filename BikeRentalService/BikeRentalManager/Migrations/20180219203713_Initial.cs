@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 
-namespace BikeRentalService.Migrations
+namespace BikeRentalManager.Migrations
 {
     public partial class Initial : Migration
     {
@@ -94,7 +94,7 @@ namespace BikeRentalService.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     BuyerCustomerId = table.Column<int>(nullable: false),
                     PaidFlag = table.Column<bool>(nullable: false),
-                    RentEndTime = table.Column<DateTime>(nullable: false),
+                    RentEndTime = table.Column<DateTime>(nullable: true),
                     RentStartTime = table.Column<DateTime>(nullable: false),
                     RentedBikeBikeId = table.Column<int>(nullable: false),
                     TotalCost = table.Column<double>(nullable: false)

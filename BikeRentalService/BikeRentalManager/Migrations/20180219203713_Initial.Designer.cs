@@ -8,12 +8,13 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace BikeRentalService.Migrations
+namespace BikeRentalManager.Migrations
 {
     [DbContext(typeof(BikeRentalContext))]
-    partial class BikeRentalContextModelSnapshot : ModelSnapshot
+    [Migration("20180219203713_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

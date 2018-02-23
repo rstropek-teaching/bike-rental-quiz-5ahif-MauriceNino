@@ -8,13 +8,12 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace BikeRentalService.Migrations
+namespace BikeRentalManager.Migrations
 {
     [DbContext(typeof(BikeRentalContext))]
-    [Migration("20180216133753_Initial")]
-    partial class Initial
+    partial class BikeRentalContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -121,7 +120,7 @@ namespace BikeRentalService.Migrations
 
                     b.Property<bool>("PaidFlag");
 
-                    b.Property<DateTime>("RentEndTime");
+                    b.Property<DateTime?>("RentEndTime");
 
                     b.Property<DateTime>("RentStartTime");
 

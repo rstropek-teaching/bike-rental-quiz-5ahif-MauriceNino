@@ -28,11 +28,15 @@ namespace BikeRentalService.Controllers
                     .Select(r => r).ToArray().Length == 0)
                 .OrderBy(b => 
                     sort=="pofh"?
-                        b.RentalPriceFirstHour:
-                        sort=="poah"?
-                            b.RentalPriceExtraHour:
-                            sort=="pd"?
-                                b.BikeId:b.BikeId //TODO: Price Sort
+                        b.RentalPriceFirstHour
+                        : sort=="poah" ? 
+                            b.RentalPriceExtraHour
+                            : b.BikeId
+                )
+                .OrderByDescending(b=>
+                    sort == "pd" ?
+                        b.PurchaseDate.Ticks
+                        : b.BikeId
                 ));
 
 
