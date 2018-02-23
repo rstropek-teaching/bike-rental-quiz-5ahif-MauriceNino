@@ -129,7 +129,7 @@ Note that the business rules stated above have to be checked in the RESTful Web 
 #### Bikes
 
 1. Get all bikes that are currently available (i.e. not in an active rent) DONE
-    * A caller can optionally specify whether the list should be sorted by price of first hour (ascending), price of additional hours (ascending), or purchase date (descending) TODO
+    * A caller can optionally specify whether the list should be sorted by price of first hour (ascending), price of additional hours (ascending), or purchase date (descending) DONE
 1. Create a bike DONE
 2. Update a bike DONE
 3. Delete a bike DONE
@@ -151,9 +151,9 @@ Note that the business rules stated above have to be checked in the RESTful Web 
 
 ## Non-Functional Requirements
 
-1. There has to be a *Swagger* and/or *Open API* document describing the RESTful Web API* TODO
-1. The code has to be well documented and formatted TODO
-1. The RESTful Web API has to follow established best practices for designing RESTful Web APIs TODO
+1. There has to be a *Swagger* and/or *Open API* document describing the RESTful Web API* DONE
+1. The code has to be well documented and formatted
+1. The RESTful Web API has to follow established best practices for designing RESTful Web APIs
 1. Tests should be automated. There have to be unit tests for at least the price finding logic. DONE
 
 *) You do not need to create the document by hand. You can use the *Swashbuckle for ASP.NET Core* NuGet package instead.
